@@ -1,0 +1,69 @@
+<div class="form-group">
+  <label for="partId">Part ID</label>
+  <input type="text" id="partId" [(ngModel)]="part.partId" name="partId" required>
+  <div *ngIf="partId.invalid && (partId.dirty || partId.touched)" class="error">
+    <div *ngIf="partId.errors.required">
+      Part ID is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="unitName">Unit Name</label>
+  <input type="text" id="unitName" [(ngModel)]="part.unitName" name="unitName" required>
+  <div *ngIf="unitName.invalid && (unitName.dirty || unitName.touched)" class="error">
+    <div *ngIf="unitName.errors.required">
+      Unit Name is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="groupName">Group Name</label>
+  <input type="text" id="groupName" [(ngModel)]="part.groupName" name="groupName" required>
+  <div *ngIf="groupName.invalid && (groupName.dirty || groupName.touched)" class="error">
+    <div *ngIf="groupName.errors.required">
+      Group Name is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="lineDesc">Line Description</label>
+  <input type="text" id="lineDesc" [(ngModel)]="part.lineDesc" name="lineDesc" required>
+  <div *ngIf="lineDesc.invalid && (lineDesc.dirty || lineDesc.touched)" class="error">
+    <div *ngIf="lineDesc.errors.required">
+      Line Description is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="partNo">Part Number</label>
+  <input type="text" id="partNo" [(ngModel)]="part.partNo" name="partNo" required>
+  <div *ngIf="partNo.invalid && (partNo.dirty || partNo.touched)" class="error">
+    <div *ngIf="partNo.errors.required">
+      Part Number is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="partDesc">Part Description</label>
+  <input type="text" id="partDesc" [(ngModel)]="part.partDesc" name="partDesc" required>
+  <div *ngIf="partDesc.invalid && (partDesc.dirty || partDesc.touched)" class="error">
+    <div *ngIf="partDesc.errors.required">
+      Part Description is required.
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="partStatus">Part Status</label>
+  <input type="text" id="partStatus" [(ngModel)]="part.partStatus" name="partStatus" required>
+  <div *ngIf="partStatus.invalid && (partStatus.dirty || partStatus.touched)" class="error">
+    <div *ngIf="partStatus.errors.required">
+      Part Status is required.
+    </div>
+  </div>
+</div>

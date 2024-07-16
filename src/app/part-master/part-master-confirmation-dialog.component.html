@@ -1,0 +1,24 @@
+<div class="confirmation-dialog">
+  <h2>Confirmation</h2>
+  <p>Do you want to save/update the record?</p>
+  <div class="dialog-actions">
+    <button (click)="onConfirm()">Yes</button>
+    <button (click)="onCancel()">No</button>
+  </div>
+</div>
+
+<style>
+  .confirmation-dialog {
+    text-align: center;
+    padding: 20px;
+  }
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .dialog-actions button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+</style>

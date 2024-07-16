@@ -1,0 +1,39 @@
+<!-- src/app/part-master/part-master.component.html -->
+
+<div class="part-master-container">
+  <form>
+    <div class="form-group">
+      <label for="partNumber">Part Number</label>
+      <input 
+        type="text" 
+        id="partNumber" 
+        name="partNumber" 
+        (dblclick)="onPartNumberDoubleClick()" 
+        (click)="onPartNumberClick()" 
+        (keydown.enter)="onPartNumberNextItem()" 
+        placeholder="Enter Part Number" 
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="partDescription">Part Description</label>
+      <input 
+        type="text" 
+        id="partDescription" 
+        name="partDescription" 
+        placeholder="Enter Part Description" 
+        class="form-control"
+      />
+    </div>
+    <!-- Add more form fields as needed -->
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-secondary">Clear</button>
+      <button type="button" class="btn btn-warning">Edit</button>
+      <button type="button" class="btn btn-danger">Exit</button>
+    </div>
+  </form>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

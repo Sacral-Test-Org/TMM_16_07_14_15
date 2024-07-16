@@ -1,0 +1,29 @@
+<!-- src/app/exit-confirmation/exit-confirmation.component.html -->
+
+<div class="exit-confirmation-dialog">
+  <h2>Do you want to exit?</h2>
+  <div class="button-group">
+    <button (click)="onConfirm()">Yes</button>
+    <button (click)="onCancel()">No</button>
+  </div>
+</div>
+
+<style>
+  .exit-confirmation-dialog {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
